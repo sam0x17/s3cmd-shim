@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "starting."
+docker run --rm -it -v $HOME/.s3cfg:/root/.s3cfg -v $PWD:/host_wd -v $HOME:/host_home -v /:/host_root -w /host_wd alpine:edge
+echo "done."
