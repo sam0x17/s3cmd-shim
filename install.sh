@@ -11,4 +11,4 @@ if grep -q "/.s3cmd_shim" "~/.bashrc"; then
 fi
 echo 'export PATH="$PATH:~/.s3cmd_shim/"' >> ~/.bashrc || exit 1
 echo 'export PATH="$PATH:~/.s3cmd_shim/"' >> ~/.bash_profile || exit 1
-echo "s3cmd shim successfully installed"
+echo "s3cmd shim successfully installed -- reopen your terminal to begin using s3cmd"
