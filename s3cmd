@@ -1,4 +1,9 @@
 #!/bin/bash
 echo "starting."
-docker run --rm -it -v $HOME/.s3cfg:/root/.s3cfg -v $PWD:/host_wd -v $HOME:/host_home -v /:/host_root -w /host_wd alpine:edge
-echo "done."
+ABS_PWD="/host_root/$(cd "$(dirname "$PWD")"; pwd)/$(basename "$PWD")"
+S3_ARGS=" $@"
+S3_ARGS=$(echo "$S3_ARGS" | sed "s/ \// \/host_root\//g")
+S3_ARGS=$(echo "$S3_ARGS" | sed "s/=\//=\/host_root\//g")
+S3_ARGS=$(echo "$S3_ARGS" | sed "s/:\//:\/host_root\//g")
+#docker run --rm -it -v $HOME/.s3cfg:/root/.s3cfg -v /:/host_root -w $ABS_PWD alpine:edge
+#echo "done."
