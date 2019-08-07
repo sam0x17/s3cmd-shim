@@ -10,8 +10,7 @@ do not work on any macos version of s3cmd](https://github.com/s3tools/s3cmd/issu
 3. have git installed on your host system
 
 ## Installation
-Simply run this in a terminal. The script will set up your environment so that the latest
-s3cmd shell script is located at `~/.s3cmd_shim/s3cmd` and will add this to your path.
+Simply run this in a terminal:
 
 ```
 curl -o- https://raw.githubusercontent.com/sam0x17/s3cmd-shim/master/install.sh | bash
@@ -21,3 +20,6 @@ there will be a slight delay as it clones the latest docker image.
 
 You can now use `s3cmd` on your host system as you normally would, and integration should
 be fully seamless.
+
+The script will set up your environment so that the latest
+s3cmd shell script is located at `~/.s3cmd_shim/s3cmd` and will add this to your path.
