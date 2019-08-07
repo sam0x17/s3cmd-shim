@@ -5,7 +5,7 @@ git clone git@github.com:sam0x17/s3cmd-shim.git || exit 1
 cd s3cmd-shim || exit 1
 cp s3cmd ../ || exit 1
 rm -rf s3cmd-shim || exit 1
-if grep -q "/.s3cmd_shim" "~/.bashrc"; then
+if grep -q "/.s3cmd_shim" "$HOME/.bashrc"; then
   echo "s3cmd shim successfully updated"
   exit
 fi
