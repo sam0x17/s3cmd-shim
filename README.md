@@ -1,8 +1,8 @@
 # s3cmd shim
 This docker image provides a working s3cmd CLI tool that can be used as a drop-in replacement
 for a local s3cmd installation on systems where certain features of s3cmd are not currently
-functioning. In particular, I created this to get around the fact that [invalidations currently
-do not work on any macos version of s3cmd](https://github.com/s3tools/s3cmd/issues/1046).
+functioning. In particular, I created this to get around the fact that
+ [support for the cf-invalidate option on macos has been broken since 2018](https://github.com/s3tools/s3cmd/issues/1046).
 
 ## Prerequisites
 1. ensure that you have an existing s3cmd config file stored at `~/.s3cfg`
