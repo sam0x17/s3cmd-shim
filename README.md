@@ -5,9 +5,8 @@ functioning. In particular, I created this to get around the fact that
  [support for the cf-invalidate option on macos has been broken since 2018](https://github.com/s3tools/s3cmd/issues/1046).
 
 ## Prerequisites
-1. ensure that you have an existing s3cmd config file stored at `~/.s3cfg`
-2. make sure you have docker installed and usuable by non-root users
-3. have git installed on your host system
+1. docker must be installed and enabled for non-root users
+2. your system must have curl installed (basically every system does)
 
 ## Installation
 Simply run this in a terminal:
