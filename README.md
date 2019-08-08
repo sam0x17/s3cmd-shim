@@ -22,14 +22,12 @@ You can now use `s3cmd` on your host system as you normally would, and integrati
 be fully seamless.
 
 The script will set up your environment so that the latest
-s3cmd shell script is located at `~/.s3cmd_shim/s3cmd` and will add this to your path. If you use ash or zsh or fish or something
-weird you may have to manually add `~/.s3cmd_shim/` to your path.
+s3cmd shell script is located at `~/.s3cmd_shim/s3cmd` and will add this to your PATH. If you use ash or zsh or fish or something
+weird you may have to manually add `~/.s3cmd_shim/` to your PATH.
 
 ## Updating / Uninstalling
-To uninstall clone the repo and `./uninstall.sh`. If you care, you
-will need to manually remove the PATH entries from the usual locations.
-
-To update, just re-run the installation one-liner and you should be good.
+* To uninstall, clone the repo, `cd` into it and run `./uninstall.sh`. If you care enough, you can also manually remove the PATH entries from the usual locations.
+* To update, just re-run the installation one-liner and you should be good to go.
 
 ## Status
 - [X] tested and working, even on macos
