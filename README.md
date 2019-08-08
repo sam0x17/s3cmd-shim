@@ -23,7 +23,8 @@ You can now use `s3cmd` on your host system as you normally would, and integrati
 be fully seamless.
 
 The script will set up your environment so that the latest
-s3cmd shell script is located at `~/.s3cmd_shim/s3cmd` and will add this to your path.
+s3cmd shell script is located at `~/.s3cmd_shim/s3cmd` and will add this to your path. If you use ash or zsh or fish or something
+weird you may have to manually add `~/.s3cmd_shim/` to your path.
 
 ## Status
 - [X] tested and working, even on macos
