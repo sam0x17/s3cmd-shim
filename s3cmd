@@ -4,4 +4,4 @@ S3_ARGS=" $@"
 S3_ARGS=$(echo "$S3_ARGS" | sed "s/ \// \/host_root\//g")
 S3_ARGS=$(echo "$S3_ARGS" | sed "s/=\//=\/host_root\//g")
 S3_ARGS=$(echo "$S3_ARGS" | sed "s/:\//:\/host_root\//g")
-docker run --rm -it -v $HOME/.s3cfg:/root/.s3cfg -v /:/host_root -w $ABS_PWD durosoft/s3cmd-shim
+docker run --rm -i -v $HOME/.s3cfg:/root/.s3cfg -v /:/host_root -w $ABS_PWD durosoft/s3cmd-shim
