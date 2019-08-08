@@ -3,5 +3,4 @@ ABS_PWD="/host_root/$(cd "$(dirname "$PWD")"; pwd)/$(basename "$PWD")"
 S3_ARGS=" $@"
 S3_ARGS=$(echo "$S3_ARGS" | sed "s/ \// \/host_root\//g")
 S3_ARGS=$(echo "$S3_ARGS" | sed "s/=\//=\/host_root\//g")
-S3_ARGS=$(echo "$S3_ARGS" | sed "s/:\//:\/host_root\//g")
 docker run --rm -i -v $HOME/.s3cfg:/root/.s3cfg -v /:/host_root -w $ABS_PWD -e S3_ARGS="$S3_ARGS" durosoft/s3cmd-shim
