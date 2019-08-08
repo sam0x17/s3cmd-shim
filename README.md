@@ -23,3 +23,9 @@ be fully seamless.
 
 The script will set up your environment so that the latest
 s3cmd shell script is located at `~/.s3cmd_shim/s3cmd` and will add this to your path.
+
+## Status
+- [X] tested and working, even on macos
+- [X] working with absolute paths
+- [ ] tested with current directory based paths
+- [ ] tested with relative paths (should work fine)
