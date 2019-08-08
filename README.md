@@ -4,7 +4,7 @@ for a local s3cmd installation on systems where certain features of s3cmd are no
 functioning. In particular, I created this to get around the fact that
  [support for the cf-invalidate option on macos has been broken since 2018](https://github.com/s3tools/s3cmd/issues/1046).
 
-Linux and Macos is supported. Windows will work but you will need to write your own `s3cmd` script as a .bat file.
+Linux and Macos are supported. Windows will work but you will need to write your own `s3cmd` script as a .bat file.
 
 ## Prerequisites
 1. docker must be installed and enabled for non-root users
