@@ -2,7 +2,8 @@
 This docker image provides a working s3cmd CLI tool that can be used as a drop-in replacement
 for a local s3cmd installation on systems where certain features of s3cmd are not currently
 functioning. In particular, I created this to get around the fact that
- [support for the cf-invalidate option on macos has been broken since 2018](https://github.com/s3tools/s3cmd/issues/1046).
+ [support for the cf-invalidate option on macos has been broken since 2018](https://github.com/s3tools/s3cmd/issues/1046). I have also written
+a [medium article](https://medium.com/@DuroSoft/s3cmd-is-still-broken-on-macos-a-docker-based-solution-db6a1bca6299) on the subject.
 
 Linux and Macos are supported. Windows will work but you will need to write your own `s3cmd` script as a .bat file.
 
